@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty | API</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <img src="assets/images/logo.svg" alt="Logo">
+        <nav id="nav">
+            <ul id="nav-items">
+                <li>
+                    <a href="#">Characters</a>
+                </li>
+                <li>
+                    <a href="#">Locations</a>
+                </li>
+                <li>
+                    <a href="#">Episodes</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="banner-filter">
+            <div id="banner">
+                <img src="assets/images/banner.svg" alt="Banner">
+            </div>
+            <div id="filters">
+                <div class="filter input-filter">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" name="name-filter" id="name-filter" placeholder="Filter by name...">
+                </div>
+                <div class="filter">
+                    <select name="species-filter" id="species-filter">
+                        <option value="species">Species</option>
+                        <option value="animal">Animal</option>
+                        <option value="alien">Alien</option>
+                        <option value="illness">Doença</option>
+                        <option value="unknown-specie">Desconhecido</option>
+                        <option value="human">Humano</option>
+                        <option value="humanoid">Humanoide</option>
+                        <option value="mythological">Mitológico</option>
+                        <option value="poopybutthole">Poopybutthole</option>
+                        <option value="robo">Robo</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <select name="gender-filter" id="gender-filter">
+                        <option value="gender">Gender</option>
+                        <option value="female">Feminino</option>
+                        <option value="male">Masculino</option>
+                        <option value="no-gender">Sem Gênero</option>
+                        <option value="unknown-gender">Desconhecido</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <select name="status-filter" id="status-filter">
+                        <option value="status">Status</option>
+                        <option value="alive">Vivo</option>
+                        <option value="dead">Morto</option>
+                        <option value="unknown-status">Desconhecido</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+        <section id="characters-container">
+            <div id="characters">
+                <div class="char">
+                    <img src="assets/images/rick.png" alt="">
+                    <div class="info">
+                        <h2>Rick Sanchez</h2>
+                        <p>Humano</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
